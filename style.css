@@ -17,7 +17,7 @@ body {
   padding-inline: 2rem;
 }
 
-section {
+.attribution {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -25,10 +25,11 @@ section {
 }
 
 .card {
-  width: 18rem;
+  width: 20rem;
   padding: 1rem;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 0 5px 30px #80808057;
 }
 
 .img_card {
@@ -51,25 +52,38 @@ section {
 
 .title_card {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--titulo);
 }
 
 .paragraph_card {
   color: var(--parrafo);
   font-family: "poppins", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
-.attribution {
+footer {
   text-align: center;
   font-family: "poppins", sans-serif;
+  padding-block: 1rem;
 }
 
-.attribution span {
+footer p {
   color: var(--titulo);
 }
 
-.attribution a {
+footer a {
   text-decoration: none;
+}
+
+@media (max-width: 385px) {
+  .card {
+    width: 18rem;
+  }
+  .title_card {
+    font-size: 1rem;
+  }
+  .paragraph_card {
+    font-size: 0.7rem;
+  }
 }
